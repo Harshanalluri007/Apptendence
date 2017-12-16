@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jay_s.apptendance.StudentActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <EditText
+        android:id="@+id/firstnameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="23dp"
+        android:background="@drawable/roundtextfield"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/StudentLNameView"
+        app:layout_constraintStart_toStartOf="@+id/StudentFNameView"
+        app:layout_constraintTop_toBottomOf="@+id/StudentFNameView" />
+
+    <EditText
+        android:id="@+id/lastnameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/roundtextfield"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/StudentLNameView"
+        app:layout_constraintTop_toTopOf="@+id/StudentLNameView" />
+
+    <EditText
+        android:id="@+id/pantherText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="94dp"
+        android:background="@drawable/roundtextfield"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/Enterbutton"
+        app:layout_constraintStart_toStartOf="@+id/StudentPNumView"
+        app:layout_constraintTop_toBottomOf="@+id/StudentPNumView" />
+
+    <Button
+        android:id="@+id/Enterbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:background="@drawable/roundbutton"
+        android:text="Enter"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/studentConfirmation"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pantherText" />
+
+    <TextView
+        android:id="@+id/studentConfirmation"
+        android:layout_width="157dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="45dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Enterbutton" />
+
+    <TextView
+        android:id="@+id/StudentFNameView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="70dp"
+        android:text="Enter First Name"
+        app:layout_constraintBottom_toTopOf="@+id/firstnameText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/StudentLNameView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:layout_marginStart="16dp"
+        android:text="Enter Last Name"
+        app:layout_constraintBottom_toTopOf="@+id/StudentPNumView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstnameText" />
+
+    <TextView
+        android:id="@+id/StudentPNumView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:layout_marginStart="16dp"
+        android:text="Enter Panther Number"
+        app:layout_constraintBottom_toTopOf="@+id/pantherText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/StudentLNameView" />
+</android.support.constraint.ConstraintLayout>

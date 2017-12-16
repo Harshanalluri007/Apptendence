@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jay_s.apptendance.RemoveActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <EditText
+        android:id="@+id/removeFirstText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/roundtextfield"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/LNameView"
+        app:layout_constraintStart_toStartOf="@+id/FNameView"
+        app:layout_constraintTop_toBottomOf="@+id/FNameView" />
+
+    <EditText
+        android:id="@+id/removeLastText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="22dp"
+        android:layout_marginLeft="16dp"
+        android:background="@drawable/roundtextfield"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/PNumView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LNameView" />
+
+    <EditText
+        android:id="@+id/removePanther"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="71dp"
+        android:background="@drawable/roundtextfield"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/removebutton"
+        app:layout_constraintStart_toStartOf="@+id/PNumView"
+        app:layout_constraintTop_toBottomOf="@+id/PNumView" />
+
+    <Button
+        android:id="@+id/removebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="43dp"
+        android:background="@drawable/roundbutton"
+        android:text="Remove"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/removeConfirmation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/removePanther" />
+
+    <TextView
+        android:id="@+id/removeConfirmation"
+        android:layout_width="149dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="78dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/removebutton" />
+
+    <TextView
+        android:id="@+id/FNameView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="58dp"
+        android:text="Enter First Name"
+        app:layout_constraintBottom_toTopOf="@+id/removeFirstText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/LNameView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="Enter Last Name"
+        app:layout_constraintBottom_toTopOf="@+id/removeLastText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/removeFirstText" />
+
+    <TextView
+        android:id="@+id/PNumView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:layout_marginStart="16dp"
+        android:text="Enter Panther Number"
+        app:layout_constraintBottom_toTopOf="@+id/removePanther"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/removeLastText" />
+</android.support.constraint.ConstraintLayout>
